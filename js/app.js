@@ -176,10 +176,10 @@ function initModals() {
         images: ['assets/wl1.png', 'assets/wl2.png', 'assets/wl3.png', 'assets/wl4.png']
       },
       'onboarding': {
-        title: 'Intern Task Progression Platform (InternSpect)',
+        title: 'InternSpect - Intern Task Progression Platform',
         subtitle: 'Internship Mini-Project @ Entomo Digital',
         tech: ['Workflow Design', 'Process Analysis', 'HTML5', 'CSS3', 'JavaScript'],
-        summary: 'Designed and proposed a structured onboarding workflow and task management tool for incoming QA and software interns to reduce onboarding ramp-up time.',
+        summary: 'A structured onboarding and task management platform designed for incoming QA and software interns to organize assigned tasks, simplify submission and review, and provide clearer visibility of internship progress.',
         highlights: [
           'Contributed to the design and development of a centralized intern task management platform for organizing onboarding activities, assigned tasks, deadlines, and progress.',
           'Supported the implementation of a structured task submission and review workflow to facilitate task completion, supervisor feedback, and approval.',
