@@ -184,7 +184,7 @@ function initModals() {
           'Analyzed bottlenecks in intern task assignment during sprint releases.',
           'Formulated structured documentation and test case templates for new hires.'
         ],
-        images: ['assets/intern1.png', 'assets/intern2.png', 'assets/intern3.png', 'assets/intern4.png']
+        images: ['assets/intern1.png', 'assets/intern2.png', 'assets/intern5.png', 'assets/intern3.png', 'assets/intern4.png']
       }
     };
 
