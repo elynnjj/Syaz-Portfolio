@@ -161,7 +161,7 @@ function initModals() {
           'Built asset tracking lifecycle module from initial procurement, assignment to end-of-life disposal.',
           'Designed relational MySQL database schemas for equipment auditing and maintenance schedules.'
         ],
-        images: ['assets/placeholders/exactasset-preview.svg', 'assets/placeholders/worklance-preview.svg', 'assets/placeholders/exactasset-preview.svg']
+        images: ['assets/ea2.png', 'assets/ea1.png', 'assets/ea4.png', 'assets/ea3.png']
       },
       'worklance': {
         title: 'WorkLance — Freelance Services Management System',
@@ -173,7 +173,7 @@ function initModals() {
           'Implemented search & filter algorithms to match project criteria with skill sets.',
           'Created secure resume vault for employer review and direct communication.'
         ],
-        images: ['assets/placeholders/worklance-preview.svg', 'assets/placeholders/activity-outdoor.svg']
+        images: ['assets/wl1.png', 'assets/wl2.png', 'assets/wl3.png', 'assets/wl4.png']
       },
       'onboarding': {
         title: 'Intern Onboarding & Task Management Tool',
@@ -184,7 +184,7 @@ function initModals() {
           'Analyzed bottlenecks in intern task assignment during sprint releases.',
           'Formulated structured documentation and test case templates for new hires.'
         ],
-        images: ['assets/placeholders/entomo-qa.svg', 'assets/placeholders/activity-sports.svg']
+        images: ['assets/intern1.png', 'assets/intern2.png', 'assets/intern3.png', 'assets/intern4.png']
       }
     };
 
