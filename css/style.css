@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 .text-cyan { color: var(--accent-neon-cyan); }
 .text-green { color: var(--accent-neon-green); }
 .text-purple { color: var(--accent-neon-purple); }
-.font-code { font-family: var(--font-code); }
+.font-code { font-family: var(--font-body); }
 
 a {
   color: inherit;
@@ -182,7 +182,7 @@ section {
 }
 
 .brand-logo {
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-primary);
@@ -209,7 +209,7 @@ section {
   border: 1px solid rgba(80, 250, 123, 0.3);
   color: var(--accent-neon-green);
   font-size: 0.75rem;
-  font-family: var(--font-code);
+  font-family: var(--font-body);
 }
 
 .status-badge .ping {
@@ -341,7 +341,7 @@ section {
 
 .hero-greeting {
   font-family: var(--font-code);
-  color: var(--accent-rose-bright);
+  color: #944954;
   font-size: 1rem;
   margin-bottom: 12px;
   display: flex;
@@ -568,7 +568,7 @@ section {
   padding: 4px 10px;
   border-radius: 6px;
   font-size: 0.75rem;
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   font-weight: 600;
   margin-bottom: 12px;
   text-transform: uppercase;
@@ -587,7 +587,7 @@ section {
 }
 
 .timeline-date {
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   font-size: 0.85rem;
   color: var(--text-muted);
   margin-bottom: 6px;
@@ -677,7 +677,7 @@ section {
   right: 0;
   padding: 6px 10px;
   font-size: 0.72rem;
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   color: #ffffff;
   background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
 }
@@ -736,7 +736,7 @@ section {
   background: rgba(21, 21, 21, 0.88);
   border: 1px solid var(--card-border);
   color: var(--accent-rose-light);
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   font-size: 0.75rem;
 }
 
@@ -756,7 +756,7 @@ section {
 .project-sub {
   font-size: 0.85rem;
   color: var(--accent-rose-light);
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   margin-bottom: 12px;
 }
 
@@ -779,7 +779,7 @@ section {
   border-radius: 4px;
   background: var(--bg-surface-elevated);
   border: 1px solid var(--card-border);
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   font-size: 0.78rem;
   color: var(--text-secondary);
 }
@@ -882,7 +882,7 @@ section {
 
 .skill-cat {
   font-size: 0.78rem;
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   color: var(--text-muted);
 }
 
@@ -892,7 +892,7 @@ section {
 
 .skill-level-text {
   font-size: 0.75rem;
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   color: var(--accent-rose-light);
   margin-bottom: 5px;
   display: block;
@@ -948,7 +948,7 @@ section {
   background: rgba(255, 255, 255, 0.04);
   border: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 0.82rem;
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   color: var(--text-secondary);
   transition: var(--transition-fast);
 }
@@ -1015,7 +1015,7 @@ section {
   padding: 3px 8px;
   border-radius: 4px;
   font-size: 0.72rem;
-  font-family: var(--font-code);
+  font-family: var(--font-body);
   background: rgba(80, 250, 123, 0.12);
   color: var(--accent-neon-green);
   border: 1px solid rgba(80, 250, 123, 0.25);
