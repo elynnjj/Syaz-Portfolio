@@ -157,9 +157,9 @@ function initModals() {
         tech: ['Laravel (PHP)', 'JavaScript', 'CSS3', 'MySQL', 'SMTP Email API'],
         summary: 'Developed a comprehensive web-based IT Asset Management System streamlining company asset operations. Managed laptop/desktop checkout flows, automated employee-to-HOD asset request approvals, maintenance logs, and asset disposal records.',
         highlights: [
-          'Digitalized manual IT request paperwork into a multi-level email notification approval flow.',
-          'Built asset tracking lifecycle module from initial procurement, assignment to end-of-life disposal.',
-          'Designed relational MySQL database schemas for equipment auditing and maintenance schedules.'
+          'Digitalized manual IT request paperwork into a structured multi-level email notification and approval workflow.',
+          'Built an IT asset tracking lifecycle covering new asset registration, check-in/check-out, assignment, maintenance, and end-of-life disposal.',
+          'Designed relational MySQL database schemas to support asset records, assignment history, maintenance tracking, and equipment auditing.'
         ],
         images: ['assets/ea2.png', 'assets/ea1.png', 'assets/ea4.png', 'assets/ea3.png']
       },
@@ -176,13 +176,14 @@ function initModals() {
         images: ['assets/wl1.png', 'assets/wl2.png', 'assets/wl3.png', 'assets/wl4.png']
       },
       'onboarding': {
-        title: 'Intern Onboarding & Task Management Tool',
+        title: 'Intern Task Progression Platform (InternSpect)',
         subtitle: 'Internship Mini-Project @ Entomo Digital',
-        tech: ['Workflow Design', 'Process Analysis', 'Task Tracking', 'Agile'],
+        tech: ['Workflow Design', 'Process Analysis', 'HTML5', 'CSS3', 'JavaScript'],
         summary: 'Designed and proposed a structured onboarding workflow and task management tool for incoming QA and software interns to reduce onboarding ramp-up time.',
         highlights: [
-          'Analyzed bottlenecks in intern task assignment during sprint releases.',
-          'Formulated structured documentation and test case templates for new hires.'
+          'Contributed to the design and development of a centralized intern task management platform for organizing onboarding activities, assigned tasks, deadlines, and progress.',
+          'Supported the implementation of a structured task submission and review workflow to facilitate task completion, supervisor feedback, and approval.',
+          'Collaborated with team members to develop progress tracking features that provide interns and supervisors with an overview of task status and internship progress.'
         ],
         images: ['assets/intern1.png', 'assets/intern2.png', 'assets/intern5.png', 'assets/intern3.png', 'assets/intern4.png']
       }
