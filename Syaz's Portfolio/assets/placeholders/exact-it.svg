@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="exBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141913"/>
+      <stop offset="100%" stop-color="#1b2419"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" rx="12" fill="url(#exBg)" stroke="#2b3b28" stroke-width="1.5"/>
+  <text x="30" y="45" font-family="sans-serif" font-size="16" font-weight="bold" fill="#50fa7b">Exact Automation — IT Intern Trainee</text>
+  <text x="30" y="70" font-family="sans-serif" font-size="12" fill="#8cb288">1st-Level IT Support, Equipment Refurbishing &amp; Asset Management</text>
+
+  <rect x="30" y="100" width="250" height="180" rx="8" fill="#0b120a" stroke="#233620"/>
+  <text x="45" y="125" font-family="monospace" font-size="12" font-weight="bold" fill="#50fa7b">IT Operations &amp; Support</text>
+  <text x="45" y="155" font-family="sans-serif" font-size="11" fill="#99c496">• Desktops &amp; Laptops Hardware Setup</text>
+  <text x="45" y="175" font-family="sans-serif" font-size="11" fill="#99c496">• 1st-Level Software Troubleshooting</text>
+  <text x="45" y="195" font-family="sans-serif" font-size="11" fill="#99c496">• Guided &amp; Mentored Junior Intern</text>
+  <text x="45" y="215" font-family="sans-serif" font-size="11" fill="#99c496">• System Diagnostics &amp; OS Deployment</text>
+
+  <rect x="300" y="100" width="270" height="180" rx="8" fill="#0b120a" stroke="#233620"/>
+  <text x="315" y="125" font-family="monospace" font-size="12" font-weight="bold" fill="#e6c687">Asset Records &amp; Repairs</text>
+  <text x="315" y="155" font-family="sans-serif" font-size="11" fill="#99c496">• Internal Equipment Audits</text>
+  <text x="315" y="175" font-family="sans-serif" font-size="11" fill="#99c496">• Refurbished Hardware Components</text>
+  <text x="315" y="195" font-family="sans-serif" font-size="11" fill="#99c496">• Updated Disposed Asset Tracking</text>
+  <text x="315" y="215" font-family="sans-serif" font-size="11" fill="#99c496">• Standard IT Security Compliance</text>
+
+  <rect x="30" y="298" width="540" height="30" rx="6" fill="#070d06" stroke="#50fa7b" stroke-dasharray="4 4"/>
+  <text x="300" y="317" font-family="monospace" font-size="11" fill="#50fa7b" text-anchor="middle">📷 Work Experience Image Slot — Exact Automation Tech Lab Photo</text>
+</svg>

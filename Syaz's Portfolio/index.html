@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syazreen Elyna | Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Syazreen Elyna Binti Muhammad Rajab - Software Engineering Graduate specializing in Laravel, JavaScript, QA Testing, and Business Analysis.">
+
+  <!-- FontAwesome Icons & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Dark Particle Canvas -->
+  <canvas id="background-canvas"></canvas>
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#about" class="brand-logo">
+        <span class="dot"></span> &lt;/Syaz&gt;
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link active">About</a></li>
+        <li><a href="#chronology" class="nav-link">Chronology</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="status-badge"
+          title="Open for Business Analyst, Software Tester, Software Developer, & IT opportunities">
+          <span class="ping"></span> Available for Work
+        </div>
+        <button onclick="window.open('assets/resume_syaz.pdf', '_blank')" class="btn btn-primary"
+          style="padding: 8px 16px; font-size:0.85rem;">
+          <i class="fa-solid fa-file-lines"></i> Resume
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- SECTION 1: HERO / ABOUT ME -->
+  <section id="about" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-greeting font-code">
+          <i class="fa-solid fa-mug-hot"></i> Hello World, I am
+        </div>
+        <h1 class="hero-name">Syazreen Elyna</h1>
+        <div class="hero-role" style="margin-bottom: 24px;">
+          <span>Software Engineering Graduate</span>
+        </div>
+
+        <div class="hero-summary">
+          Fresh Computer Science graduate majoring in Software Engineering from UMPSA. Equipped with hands-on experience
+          in software development (Laravel, JS, MySQL), IT support, business analysis, and quality assurance
+          (MySejahtera &amp; MyVAS testing) through academic FYP projects and industry internships. Detail-oriented,
+          adaptable, and passionate about delivering high-quality software solutions.
+        </div>
+
+        <div class="hero-ctas">
+          <a href="#chronology" class="btn btn-primary">
+            Explore Chronology <i class="fa-solid fa-arrow-down"></i>
+          </a>
+          <button onclick="copyText('syaz.elyna@gmail.com', 'Email')" class="btn btn-outline">
+            <i class="fa-regular fa-copy"></i> Copy Email
+          </button>
+        </div>
+
+        <div class="contact-quick-info">
+          <div class="contact-item">
+            <i class="fa-solid fa-location-dot"></i> Selangor, Malaysia
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:syaz.elyna@gmail.com" target="_blank">syaz.elyna@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:+60199894987" target="_blank">+6019-9894987</a>
+          </div>
+          <div class="contact-item">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/syazreenelyna" target="_blank">linkedin.com/in/syazreenelyna</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Photo Card -->
+      <div class="profile-card-wrapper">
+        <div class="profile-card">
+          <div class="profile-img-box">
+            <!-- PROFILE IMAGE SLOT: File located at assets/profile.jpg -->
+            <img src="assets/syaz.jpeg" alt="Syazreen Elyna Profile" class="profile-img" id="profileImageDisplay">
+            <div class="profile-img-overlay">
+              <div class="profile-img-label">
+                Syazreen Elyna
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: CHRONOLOGY VIEW (INTERACTIVE TIMELINE) -->
+  <section id="chronology">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-timeline"></i> Career &amp; Education Journey</div>
+        <h2 class="section-title">Chronology</h2>
+        <p class="section-subtitle">
+          Explore my academic background and professional experience through key milestones in my education and industry
+          journey.
+        </p>
+      </div>
+
+      <!-- Interactive Timeline Filter Buttons -->
+      <div class="timeline-filters">
+        <button class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-layer-group"></i> All Timeline (6)
+        </button>
+        <button class="filter-btn" data-filter="work">
+          <i class="fa-solid fa-briefcase"></i> Work Experience (4)
+        </button>
+        <button class="filter-btn" data-filter="edu">
+          <i class="fa-solid fa-graduation-cap"></i> Education (2)
+        </button>
+      </div>
+
+      <!-- Timeline Items -->
+      <div class="timeline-container">
+
+        <!-- 1. QA Intern Trainee (Entomo Digital) -->
+        <div class="timeline-item" data-category="work">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-top">
+              <div class="timeline-card-meta">
+                <span class="timeline-type-tag type-work"><i class="fa-solid fa-briefcase"></i> Work Experience</span>
+                <div class="timeline-date">May 2026 – August 2026</div>
+                <h3 class="timeline-role">Quality Assurance Intern Trainee</h3>
+                <div class="timeline-org">Entomo Digital Sdn. Bhd.</div>
+              </div>
+              <div class="timeline-image-slot">
+                <img src="assets/entomo.jpeg" alt="Entomo QA Experience">
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li>Executed functional, regression, and user acceptance testing (UAT) for <strong>MySejahtera</strong>
+                and <strong>MyVAS</strong> modules, validating features against business requirements.</li>
+              <li>Created and maintained structured test cases, logged software defects in the team tracking sheet, and
+                collaborated closely with developers and Product Owners.</li>
+              <li>Performed UI validation, workflow testing, and data verification across web and mobile applications
+                during Agile sprint cycles.</li>
+              <li>Developed a mini project to optimize intern onboarding and task management processes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 2. Business Analyst Intern Trainee (Ark Digital) -->
+        <div class="timeline-item" data-category="work">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-top">
+              <div class="timeline-card-meta">
+                <span class="timeline-type-tag type-work"><i class="fa-solid fa-briefcase"></i> Work Experience</span>
+                <div class="timeline-date">March 2026 – April 2026</div>
+                <h3 class="timeline-role">Business Analyst Intern Trainee</h3>
+                <div class="timeline-org">Ark Digital Technologies Sdn. Bhd.</div>
+              </div>
+              <div class="timeline-image-slot">
+                <img src="assets/ark.jpeg" alt="Ark Digital BA Experience">
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li>Supported product teams in gathering and analyzing business requirements, system specifications, and
+                documentation for software development.</li>
+              <li>Participated in client and internal team discussions for requirement clarification and aligning
+                business goals with technical solutions.</li>
+              <li>Gained practical knowledge of <strong>OAuth 2.0 authentication</strong> concepts, token implementation
+                flows, and system integration specs.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 3. Bachelor Degree (UMPSA) -->
+        <div class="timeline-item" data-category="edu">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-top">
+              <div class="timeline-card-meta">
+                <span class="timeline-type-tag type-edu"><i class="fa-solid fa-graduation-cap"></i> Education</span>
+                <div class="timeline-date">October 2023 – August 2026</div>
+                <h3 class="timeline-role">Bachelor of Computer Science (Software Engineering) with Honours</h3>
+                <div class="timeline-org">Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)</div>
+              </div>
+              <div class="timeline-image-slot" onclick="openProjectModal('exactasset')"
+                title="View ExactAsset Project Preview">
+                <img src="assets/placeholders/exactasset-preview.svg" alt="ExactAsset FYP Project">
+                <div class="timeline-image-hint"><i class="fa-solid fa-laptop-code"></i> FYP: ExactAsset (Laravel)</div>
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li><strong>CGPA: 3.70</strong> | Awarded Dean’s List in <strong>4 out of 5 semesters</strong>.</li>
+              <li><strong>Final Year Project: IT Asset Management System (ExactAsset)</strong> using Laravel (PHP),
+                JavaScript, CSS, and MySQL.</li>
+              <li>Engineered digital IT Asset Requests with automated email notifications for employee and HOD approval
+                chains.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. IT Intern Trainee (Exact Automation - 2024) -->
+        <div class="timeline-item" data-category="work">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-top">
+              <div class="timeline-card-meta">
+                <span class="timeline-type-tag type-work"><i class="fa-solid fa-briefcase"></i> Work Experience</span>
+                <div class="timeline-date">August 2024 – September 2024</div>
+                <h3 class="timeline-role">IT Intern Trainee</h3>
+                <div class="timeline-org">Exact Automation Sdn. Bhd.</div>
+              </div>
+              <div class="timeline-image-slot">
+                <img src="assets/exact2.jpeg" alt="Exact Automation IT Support">
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li>Guided a new intern in handling 1st-level IT support activities, hardware, and software
+                troubleshooting procedures.</li>
+              <li>Provided guidance on device setup, maintenance, and desktop/laptop troubleshooting for daily
+                operations.</li>
+              <li>Assisted in IT asset management processes and equipment standard practices.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 5. IT Intern Trainee (Exact Automation - 2023) -->
+        <div class="timeline-item" data-category="work">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-top">
+              <div class="timeline-card-meta">
+                <span class="timeline-type-tag type-work"><i class="fa-solid fa-briefcase"></i> Work Experience</span>
+                <div class="timeline-date">March 2023 – September 2023</div>
+                <h3 class="timeline-role">IT Intern Trainee</h3>
+                <div class="timeline-org">Exact Automation Sdn. Bhd.</div>
+              </div>
+              <div class="timeline-image-slot">
+                <img src="assets/exact.jpeg" alt="Exact Automation IT Support">
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li>Provided 1st-level IT support to assist staff with hardware/software issues and laptop setups.</li>
+              <li>Assisted in IT asset management activities by updating asset records and conducting internal inventory
+                audits.</li>
+              <li>Supported hardware maintenance and disposal processes by refurbishing and repairing desktops and
+                laptops.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 6. Diploma in Computer Science (UMPSA) -->
+        <div class="timeline-item" data-category="edu">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-card-top">
+              <div class="timeline-card-meta">
+                <span class="timeline-type-tag type-edu"><i class="fa-solid fa-graduation-cap"></i> Education</span>
+                <div class="timeline-date">August 2021 – August 2023</div>
+                <h3 class="timeline-role">Diploma in Computer Science</h3>
+                <div class="timeline-org">Universiti Malaysia Pahang Al-Sultan Abdullah (UMPSA)</div>
+              </div>
+              <div class="timeline-image-slot" onclick="openProjectModal('worklance')"
+                title="View WorkLance Project Preview">
+                <img src="assets/placeholders/worklance-preview.svg" alt="WorkLance Project">
+                <div class="timeline-image-hint"><i class="fa-solid fa-laptop-code"></i> FYP: WorkLance (PHP)</div>
+              </div>
+            </div>
+            <ul class="timeline-details">
+              <li><strong>CGPA: 3.69</strong> | Awarded Dean’s List in <strong>4 out of 5 semesters</strong>.</li>
+              <li><strong>Final Year Project: Freelance Services Management System (WorkLance)</strong> using HTML, PHP,
+                JavaScript, CSS, MySQL.</li>
+              <li>Developed freelance job posting, skill search, candidate showcase, and online resume upload portal.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: FEATURED PROJECTS -->
+  <section id="projects" style="background: rgba(30, 25, 22, 0.8);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-code-branch"></i> Systems &amp; Software Development</div>
+        <h2 class="section-title">Featured Academic &amp; Work Projects</h2>
+        <p class="section-subtitle"></p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: ExactAsset -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="assets/placeholders/exactasset-preview.svg" alt="ExactAsset System">
+            <span class="project-tag-badge">Degree FYP</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">IT Asset Management System (ExactAsset)</h3>
+            <div class="project-sub">Laravel (PHP) • JavaScript • CSS3 • MySQL</div>
+            <p class="project-desc">
+              A web-based IT Asset Management System automating laptop/desktop checkout flows, IT maintenance requests,
+              disposal records, and HOD email approval notifications.
+            </p>
+            <div class="project-actions">
+              <button onclick="openProjectModal('exactasset')" class="btn btn-primary" style="width:100%;">
+                <i class="fa-solid fa-circle-info"></i> View Details &amp; Workflow
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: WorkLance -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="assets/placeholders/worklance-preview.svg" alt="WorkLance System">
+            <span class="project-tag-badge">Diploma FYP</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Freelance Services System (WorkLance)</h3>
+            <div class="project-sub">HTML5 • PHP • JavaScript • CSS3 • MySQL</div>
+            <p class="project-desc">
+              A centralized web platform for freelancers to showcase tech skills, receive project job listings from
+              employers, and manage online resume references.
+            </p>
+            <div class="project-actions">
+              <button onclick="openProjectModal('worklance')" class="btn btn-primary" style="width:100%;">
+                <i class="fa-solid fa-circle-info"></i> View Details &amp; Workflow
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Intern Onboarding Tool -->
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="assets/placeholders/entomo-qa.svg" alt="Intern Onboarding Tool">
+            <span class="project-tag-badge">Entomo Internship</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Intern Onboarding &amp; Task Workflow Solution</h3>
+            <div class="project-sub">Process Analysis • HTML5 • CSS3 • JavaScript</div>
+            <p class="project-desc">
+              Designed process workflows and task management solutions at Entomo Digital to streamline onboarding and
+              software testing task tracking for future interns.
+            </p>
+            <div class="project-actions">
+              <button onclick="openProjectModal('onboarding')" class="btn btn-primary" style="width:100%;">
+                <i class="fa-solid fa-circle-info"></i> View Details &amp; Workflow
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: SKILLS MATRIX -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-cubes"></i> Skillset &amp; Tooling</div>
+        <h2 class="section-title">Technical &amp; Interpersonal Skills</h2>
+        <p class="section-subtitle"></p>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+
+        <!-- Programming & Development -->
+        <div class="skill-card grouped-skill-card" data-category="technical">
+          <div class="skill-group-head">
+            <div class="skill-icon-box"><i class="fa-solid fa-code"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Programming &amp; Development</div>
+              <div class="skill-cat">Technical Stack</div>
+            </div>
+          </div>
+
+          <div class="skill-subgroup" style="margin-top: 8px;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:6px;">
+              <span style="color: var(--accent-rose-light); font-weight: 600;">Intermediate</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag-item"><i class="fa-brands fa-laravel"></i> Laravel (PHP)</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-html5"></i> HTML5 &amp; CSS3</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-database"></i> MySQL</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-subgroup" style="margin-top: 16px;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:6px;">
+              <span style="color: var(--accent-rose-light); font-weight: 600;">Basic</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag-item"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-code"></i> C / C++ / C#</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Software & Tools -->
+        <div class="skill-card grouped-skill-card" data-category="tools">
+          <div class="skill-group-head">
+            <div class="skill-icon-box"><i class="fa-solid fa-toolbox"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Software &amp; Tools</div>
+              <div class="skill-cat">Tooling</div>
+            </div>
+          </div>
+
+          <div class="skill-subgroup" style="margin-top: 8px;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:6px;">
+              <span style="color: var(--accent-rose-light); font-weight: 600;">Intermediate</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag-item"><i class="fa-regular fa-file-word"></i> MS Office Suite</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-terminal"></i> VS Code</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-figma"></i> Figma</span>
+              <span class="skill-tag-item"><i class="fa-brands fa-jira"></i> Jira</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-subgroup" style="margin-top: 16px;">
+            <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:6px;">
+              <span style="color: var(--accent-rose-light); font-weight: 600;">Basic</span>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag-item"><i class="fa-brands fa-github"></i> Git / GitHub</span>
+              <span class="skill-tag-item"><i class="fa-solid fa-network-wired"></i> Postman</span>
+            </div>
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 40%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interpersonal Skills -->
+        <div class="skill-card grouped-skill-card" data-category="interpersonal">
+          <div class="skill-group-head">
+            <div class="skill-icon-box"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Interpersonal Skills</div>
+              <div class="skill-cat">Soft Skills</div>
+            </div>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag-item"><i class="fa-solid fa-users"></i> Teamwork</span>
+            <span class="skill-tag-item"><i class="fa-solid fa-brain"></i> Problem-Solving</span>
+            <span class="skill-tag-item"><i class="fa-solid fa-bolt"></i> Adaptability</span>
+            <span class="skill-tag-item"><i class="fa-solid fa-comments"></i> Communication</span>
+            <span class="skill-tag-item"><i class="fa-solid fa-check-double"></i> Detail-oriented</span>
+          </div>
+          <div class="skill-level-container" style="margin-top: auto;">
+            <div class="skill-progress-track">
+              <div class="skill-progress-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="skill-card grouped-skill-card" data-category="language">
+          <div class="skill-group-head">
+            <div class="skill-icon-box"><i class="fa-solid fa-language"></i></div>
+            <div class="skill-info">
+              <div class="skill-name">Languages</div>
+              <div class="skill-cat">Proficiency Levels</div>
+            </div>
+          </div>
+          <div class="skill-tags" style="flex-direction: column; align-items: stretch; gap: 12px; margin-bottom: 0;">
+            <div>
+              <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:4px;">
+                <span>Bahasa Melayu</span>
+                <span class="skill-level-text" style="margin-bottom:0;">Native</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+            </div>
+            <div>
+              <div style="display:flex; justify-content:space-between; font-size:0.85rem; margin-bottom:4px;">
+                <span>English</span>
+                <span class="skill-level-text" style="margin-bottom:0;">Professional</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: EXTRACURRICULAR ACTIVITIES & ACHIEVEMENTS -->
+  <section id="activities" style="background: rgba(30, 25, 22, 0.8);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i class="fa-solid fa-trophy"></i> Activities &amp; Achievements</div>
+        <h2 class="section-title">Extracurricular Activities &amp; Achievements</h2>
+        <p class="section-subtitle">
+          Showcasing my competitive spirit, teamwork, and personal growth through sports,
+          competitions, outdoor activities, and professional certifications.
+        </p>
+      </div>
+
+      <div class="timeline-filters" style="justify-content: center; margin-bottom: 36px;">
+        <button class="filter-btn activity-filter-btn active" data-filter="all">All (13)</button>
+        <button class="filter-btn activity-filter-btn" data-filter="sports">🏆 Sports</button>
+        <button class="filter-btn activity-filter-btn" data-filter="tech">🎉 Achievements</button>
+        <button class="filter-btn activity-filter-btn" data-filter="outdoor">🌲 Outdoor</button>
+        <button class="filter-btn activity-filter-btn" data-filter="cert">📜 Certification</button>
+      </div>
+
+      <div class="activities-grid">
+
+        <!-- 1. Shot Put & Discus Throw -->
+        <div class="activity-card" data-category="sports">
+          <div class="activity-img-box">
+            <img src="assets/temasya.jpeg" alt="Sports Athletics">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥈 2nd Place Silver</span>
+            <h3 class="activity-title">Shot Put &amp; Discus Throw</h3>
+            <div class="activity-event">Temasya Olahraga UMPSA (2026)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Achieved 2nd place double silver medals representing faculty in varsity track and field field events.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. VIBE Volleyball -->
+        <div class="activity-card" data-category="sports">
+          <div class="activity-img-box">
+            <img src="assets/vibe.jpg" alt="VIBE Volleyball">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥉 3rd Place Bronze</span>
+            <h3 class="activity-title">VIBE Volleyball Tournament</h3>
+            <div class="activity-event">VIBE Kajang Volleyball Open Tournament (2026)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Secured 3rd place in the VIBE Volleyball Open Tournament in Kajang.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Escape Room -->
+        <div class="activity-card" data-category="tech">
+          <div class="activity-img-box">
+            <img src="assets/escape.jpeg" alt="Escape Room Winner">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥇 1st Place Champion</span>
+            <h3 class="activity-title">Escape Room: "Code Break, Escape The Lab"</h3>
+            <div class="activity-event">Faculty of Computing UMPSA (2025)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Secured 1st place by solving complex logic codes, debugging terminal puzzles, and leading team strategy
+              under tight time limits.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. DecStar -->
+        <div class="activity-card" data-category="tech">
+          <div class="activity-img-box">
+            <img src="assets/decstar.jpg" alt="DecStar">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">Dean's List Award</span>
+            <h3 class="activity-title">Recognition of Dean's List Achievement (Decstar)</h3>
+            <div class="activity-event">Faculty of Computing UMPSA (2025)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Dean's List Award Recognition for academic excellence.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. Tenpin Bowling -->
+        <div class="activity-card" data-category="sports">
+          <div class="activity-img-box">
+            <img src="assets/bowling.jpeg" alt="Bowling">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥈 2nd Place Silver</span>
+            <h3 class="activity-title">Tenpin Bowling Championship</h3>
+            <div class="activity-event">Kejohanan Sukan Antara Fakulti (SukFac 2025)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              2nd place silver medalist in inter-faculty bowling competition.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. COMBAT Multi-Sports -->
+        <div class="activity-card" data-category="sports">
+          <div class="activity-img-box">
+            <img src="assets/combat.jpeg" alt="COMBAT Sports">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥇 1st &amp; 🥈 2nd Place</span>
+            <h3 class="activity-title">Volleyball, Handball &amp; Netball Champion</h3>
+            <div class="activity-event">Computing Battle of Athletic Talent (COMBAT 2025)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              1st Place in Volleyball &amp; Handball; 2nd Place in Netball during faculty sports tournament.
+            </p>
+          </div>
+        </div>
+
+        <!-- 7. Pekan Night Games Volleyball -->
+        <div class="activity-card" data-category="sports">
+          <div class="activity-img-box">
+            <img src="assets/night.jpeg" alt="Volleyball">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥈 2nd Place Silver</span>
+            <h3 class="activity-title">Volleyball Tournament</h3>
+            <div class="activity-event">Pekan Night Games UMPSA (2025)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Earned 2nd place in varsity night games volleyball championship.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8. ARENA Volleyball -->
+        <div class="activity-card" data-category="sports">
+          <div class="activity-img-box">
+            <img src="assets/arena.jpeg" alt="ARENA Volleyball">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥉 3rd Place Bronze</span>
+            <h3 class="activity-title">Residential Colleges Athletics Volleyball</h3>
+            <div class="activity-event">ARENA UMPSA (2025)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              3rd Place bronze medalist in annual residential college games.
+            </p>
+          </div>
+        </div>
+
+        <!-- 9. Muse Ecopark Expedition -->
+        <div class="activity-card" data-category="outdoor">
+          <div class="activity-img-box">
+            <img src="assets/muse.jpeg" alt="Muse Ecopark">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🏕️ Outdoor Expedition</span>
+            <h3 class="activity-title">Muse Ecopark Expedition</h3>
+            <div class="activity-event">Extreme Club UMPSA, Gua Musang, Kelantan (2025)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Participated in outdoor survival, teamwork, and eco-nature exploration trip.
+            </p>
+          </div>
+        </div>
+
+        <!-- 10. SUKOM Netball -->
+        <div class="activity-card" data-category="sports">
+          <div class="activity-img-box">
+            <img src="assets/sukom.jpeg" alt="SUKOM Netball">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥈 2nd Place Silver</span>
+            <h3 class="activity-title">SUKOM Netball Tournament</h3>
+            <div class="activity-event">Sukan Komputeran (SUKOM 2024)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              2nd Place in computing faculty annual sports league netball.
+            </p>
+          </div>
+        </div>
+
+        <!-- 11. Caving & Zipline -->
+        <div class="activity-card" data-category="outdoor">
+          <div class="activity-img-box">
+            <img src="assets/caving.jpeg" alt="Caving Zipline">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🧗 Extreme Adventure</span>
+            <h3 class="activity-title">Caving &amp; Zipline Expedition</h3>
+            <div class="activity-event">Extreme Club UMPSA, Gua Kota Gelanggi, Pahang (2024)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Explored historic limestone caves and completed high-altitude zipline challenges.
+            </p>
+          </div>
+        </div>
+
+        <!-- 12. Karnival Muhibbah -->
+        <div class="activity-card" data-category="sports">
+          <div class="activity-img-box">
+            <img src="assets/muhibbah.jpeg" alt="Karnival Sukan Muhibbah">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">🥈 2nd Place Silver</span>
+            <h3 class="activity-title">Netball Tournament</h3>
+            <div class="activity-event">Karnival Sukan Muhibbah PEKA5 (2023)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Secured 2nd place silver medal in the netball tournament during the sports carnival.
+            </p>
+          </div>
+        </div>
+
+        <!-- 13. Cisco CCNA Certification -->
+        <div class="activity-card" data-category="cert">
+          <div class="activity-img-box">
+            <img src="assets/placeholders/cisco-cert.svg" alt="Cisco CCNA">
+          </div>
+          <div class="activity-body">
+            <span class="activity-badge">📜 Tech Certification</span>
+            <h3 class="activity-title">Cisco Networking Academy (CCNAv7)</h3>
+            <div class="activity-event">Introduction to Networks (2022)</div>
+            <p style="font-size:0.88rem; color:var(--text-secondary);">
+              Completed formal CCNAv7 training covering network fundamentals, IP routing, subnetting, and Ethernet
+              switching.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL WINDOW OVERLAY -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">Copied to clipboard!</div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="brand-logo" style="font-size:1.1rem;">
+        <span class="dot"></span> Syazreen Elyna Binti Muhammad Rajab
+      </div>
+
+      <!-- Footer Contact & Social Links -->
+      <div class="footer-social-links">
+        <a href="mailto:syaz.elyna@gmail.com" class="footer-icon-link" title="Email: syaz.elyna@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="tel:+60199894987" class="footer-icon-link" title="Phone: +6019-9894987">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/syazreenelyna" target="_blank" class="footer-icon-link"
+          title="LinkedIn Profile">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/background.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

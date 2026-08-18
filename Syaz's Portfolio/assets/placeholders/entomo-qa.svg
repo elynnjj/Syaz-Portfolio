@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="entBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d141e"/>
+      <stop offset="100%" stop-color="#142132"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" rx="12" fill="url(#entBg)" stroke="#1e344d" stroke-width="1.5"/>
+  <text x="30" y="45" font-family="sans-serif" font-size="16" font-weight="bold" fill="#66d9ef">Entomo Digital — QA Engineering &amp; Testing</text>
+  <text x="30" y="70" font-family="sans-serif" font-size="12" fill="#8ca5c2">MySejahtera &amp; MyVAS Functional, Regression &amp; UAT Modules</text>
+
+  <!-- Flowchart / Test Case Cards -->
+  <rect x="30" y="100" width="160" height="180" rx="8" fill="#090d14" stroke="#253d5a"/>
+  <text x="45" y="125" font-family="monospace" font-size="11" font-weight="bold" fill="#50fa7b">UAT Test Suite</text>
+  <text x="45" y="150" font-family="sans-serif" font-size="10" fill="#a0b3c6">• MySejahtera Module</text>
+  <text x="45" y="170" font-family="sans-serif" font-size="10" fill="#a0b3c6">• MyVAS Vaccination</text>
+  <text x="45" y="190" font-family="sans-serif" font-size="10" fill="#a0b3c6">• Agile Sprint Retest</text>
+  <rect x="45" y="225" width="130" height="22" rx="4" fill="#1b4332"/>
+  <text x="110" y="240" font-family="sans-serif" font-size="10" fill="#50fa7b" text-anchor="middle">✓ Passed Validation</text>
+
+  <rect x="220" y="100" width="160" height="180" rx="8" fill="#090d14" stroke="#253d5a"/>
+  <text x="235" y="125" font-family="monospace" font-size="11" font-weight="bold" fill="#ffb86c">Defect Tracking</text>
+  <text x="235" y="150" font-family="sans-serif" font-size="10" fill="#a0b3c6">• Shared Defect Sheet</text>
+  <text x="235" y="170" font-family="sans-serif" font-size="10" fill="#a0b3c6">• Dev &amp; PO Sync</text>
+  <text x="235" y="190" font-family="sans-serif" font-size="10" fill="#a0b3c6">• Daily Standups</text>
+  <rect x="235" y="225" width="130" height="22" rx="4" fill="#4a371e"/>
+  <text x="300" y="240" font-family="sans-serif" font-size="10" fill="#ffb86c" text-anchor="middle">Sprint Retest Complete</text>
+
+  <rect x="410" y="100" width="160" height="180" rx="8" fill="#090d14" stroke="#253d5a"/>
+  <text x="425" y="125" font-family="monospace" font-size="11" font-weight="bold" fill="#e6c687">Onboarding Tool</text>
+  <text x="425" y="150" font-family="sans-serif" font-size="10" fill="#a0b3c6">• Mini Project</text>
+  <text x="425" y="170" font-family="sans-serif" font-size="10" fill="#a0b3c6">• Intern Workflow</text>
+  <text x="425" y="190" font-family="sans-serif" font-size="10" fill="#a0b3c6">• Task Manager</text>
+  <rect x="425" y="225" width="130" height="22" rx="4" fill="#3d321d"/>
+  <text x="490" y="240" font-family="sans-serif" font-size="10" fill="#e6c687" text-anchor="middle">Workflow Deployed</text>
+
+  <rect x="30" y="298" width="540" height="30" rx="6" fill="#070a0f" stroke="#66d9ef" stroke-dasharray="4 4"/>
+  <text x="300" y="317" font-family="monospace" font-size="11" fill="#66d9ef" text-anchor="middle">📷 Work Experience Image Slot — Entomo Digital QA Team / Office Photo</text>
+</svg>
